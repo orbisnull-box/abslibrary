@@ -1,0 +1,47 @@
+<table border="2" cellpadding="5" cellspacing="5" width="60%"
+	align=center>
+	<?php
+	//var_dump($this->cols);
+
+	$i=0;
+	foreach ($this->item as $name=>$col)
+	{
+	    if ($name!=='id' and $this->cols[$name]['DATA_TYPE']!=='text') {
+	        $i++;
+	        if ($i%2==1){ echo "</tr>\n";}
+	        echo "<td width=10%>".t($this->table.'.'.$name)."</td>\n";
+	        echo "<td width=40%>";
+	        if ($this->cols[$name]['DATA_TYPE']=='tinyint' and $this->cols[$name]['LENGTH']==1) {
+	            if ($col=1) {
+	                $col='Есть';
+	            }
+	            else {
+	                $col='Нет';
+	            }
+	        }
+	        echo $this->escape($this->tT($name, $col));
+	        echo "</td>\n";
+	        if ($i%2==0) { echo "</tr>\n";};
+	    }
+	}
+	?>
+
+	<?php
+	foreach ($this->item as $name=>$col)
+	{
+	    if ($this->cols[$name]['DATA_TYPE']=='text') {
+	        echo "</tr>\n";
+	        echo "<td width=10% valign=top>".t($this->table.'.'.$name)."</td>\n";
+	        echo "<td colspan=3>";
+	        echo $this->escape($col);
+	        echo "</td>\n";
+	        echo "</tr>\n";
+	    }
+	}
+	?>
+
+	<tr>
+		<td colspan=4 align=center><?=$this->itemAction('edit', $this->item[$this->essense_id_name])?>&nbsp;&nbsp;&nbsp;&nbsp;
+		<?=$this->itemAction('delete', $this->item[$this->essense_id_name])?></td>
+	</tr>
+</table>

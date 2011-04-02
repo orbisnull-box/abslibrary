@@ -1,0 +1,65 @@
+<div id="sform"><?=$this->form?></div>
+<p style='border-bottom: 1px dashed blue; color: blue; cursor: pointer;'
+	id="show">Показать форму</p>
+<p style='border-bottom: 1px dashed blue; color: blue; cursor: pointer;'
+	id="hide">Скрыть форму</p>
+
+<script>
+$(document).ready(function(){
+<?if (!$this->first_request):?>
+   	$("#sform").hide("fast");
+    $("#show").show("fast");
+    $("#hide").hide("fast");
+<?else:?>
+    $("#show").hide("fast");
+<?endif;?>
+ });
+
+$("#show").click(function(){
+    $("#sform").show("slow");
+    $("#hide").show("slow");
+    $("#show").hide("slow");
+ });
+$("#hide").click(function(){
+    $("#sform").hide("slow");
+    $("#show").show("slow");
+    $("#hide").hide("slow");
+ });
+</script>
+
+    <?if (count($this->list)>0) {?>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<?php
+	//var_dump($this->list);
+	foreach ($this->cols as $col)
+	{
+	    if (!$col['PRIMARY'] and in_array($col['COLUMN_NAME'], $this->allowCols)) {
+	        echo "<td>".t($col['TABLE_NAME'].'.'.$col['COLUMN_NAME'])."</td>\n";
+	    }
+	}
+	echo "<td width=50 colspan=3 align=center>Действие</td>\n";
+	?>
+	</tr>
+	<?php
+	foreach ($this->list as $item)
+	{
+	    echo "<tr>\n";
+	    foreach ($item as $name=>$col)
+	    {
+	        if ($name!=='id' and in_array($name, $this->allowCols))
+	        {
+	            echo "<td>".$col."</td>\n";
+	        }
+	    }
+	    echo '<td width="15">'.$this->itemAction('show', $item['id']).'</td>';
+	    echo '<td width="15">'.$this->itemAction('edit', $item['id']).'</td>';
+	    echo '<td width="15">'.$this->itemAction('delete', $item['id']).'</td>';
+	    echo "</tr>\n";
+	}
+	?>
+</table>
+	<?=$this->pager($this->pagerParams, $this->queryString.'&pager=on'); ?>
+	<?} else {?>
+<h3>Ничего не найдено</h3>
+<?}?>

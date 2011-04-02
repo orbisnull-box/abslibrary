@@ -1,0 +1,10 @@
+<ul>
+<?
+$num=0;
+foreach ($this->messages as $message)
+{
+    $num=$num+1;
+    echo "<li> Сообщение (#$num): $message </li>\n";
+}
+?>
+</ul>

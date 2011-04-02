@@ -1,0 +1,74 @@
+<?= $this->doctype() ?>
+<html>
+<head>
+    <?= $this->headTitle() ?>
+
+    <?= $this->headMeta() ?>
+
+    <?= $this->headStyle() ?>
+
+    <?= $this->headLink() ?>
+
+    <?= $this->headScript() ?>
+</head>
+<body>
+<div id="base">
+	<div id="header">
+		<a href="<?=$this->baseUrl()?>/"><img border=0 src="<?=$this->baseUrl().'/'.$this->logo?>"  alt="<?=$this->siteName?>" class="logo" /></a>
+		<h2><a href="<?=$this->baseUrl()?>/"><?=$this->siteName?></a><br /><?=$this->siteSlogan?></h2>
+	</div>
+	<?/*<div id="secondaryMenu">
+		<ul>
+			<?if (is_array($this->secondary_links)) {
+				foreach($this->secondary_links as $link)
+				{
+					echo '<li>'. $this->link($links['title'], $links['href']). '</li>';
+				}
+			}?>
+		</ul>
+	</div>
+	*/ ?>
+	<div id="primaryMenu">
+		<?php echo $this->action('menumain', 'system', 'default'); ?>
+	</div>
+	<div id="content">
+		<div id="primaryContentContainer">
+			<div id="primaryContent">
+				<?php if ($this->mission != ""): ?>
+				<div class="mission"><?php print $mission ?></div>
+				<?php endif; ?>
+				<? if ($this->getTitle() != ""): ?>
+				<h1><?=$this->getTitle()?></h1>
+				<? endif; ?>
+				<?php print $this->header; ?>
+				<?php if ($this->tabs != ""): ?>
+				<?php print $this->tabs ?>
+				<?php endif; ?>
+				<?php if ($this->help != ""): ?>
+				<p id="help"><?php print $this->help ?></p>
+				<?php endif; ?>
+				<div id="message"><?php echo $this->action('messages', 'system', 'default'); ?></div>
+				<?=$this->layout()->content?>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+	<div id="footer">
+	    <? if(!is_null($this->currentUser)) : ?>
+            <strong><?= $this->currentUser->login ?></strong>
+            (<a href="<?= $this->logoutLink ?>">Выйти</a>)
+        <? endif; ?>
+        <!--<? if(is_null($this->currentUser)) : ?>
+            (<a href="<?= $this->loginLink ?>">Войти</a>)
+        <? endif; ?>-->
+		<?=$this->layout()->footer_message?>&nbsp;|&nbsp;<a href="http://www.dpol.ru/">relax</a>
+		</div>
+</div>
+<div id="debug">
+	<pre>
+	<? echo $this->escape($this->debugInfo); ?>
+	</pre>
+    <?php echo $this->action('profiler', 'system', 'default'); ?>
+</div>
+</body>
+</html>

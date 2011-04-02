@@ -1,0 +1,1332 @@
+<html>
+<head>
+<title>Docs For Class Abs_Function_Curl</title>
+<link rel="stylesheet" type="text/css" href="../media/style.css">
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+</head>
+<body>
+
+<table border="0" cellspacing="0" cellpadding="0" height="48" width="100%">
+  <tr>
+    <td class="header_top">Function</td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+  <tr>
+    <td class="header_menu">
+        
+                                                                                                                    
+                                                                                          		  [ <a href="../classtrees_Function.html" class="menu">class tree: Function</a> ]
+		  [ <a href="../elementindex_Function.html" class="menu">index: Function</a> ]
+		  	    [ <a href="../elementindex.html" class="menu">all elements</a> ]
+    </td>
+  </tr>
+  <tr><td class="header_line"><img src="../media/empty.png" width="1" height="1" border="0" alt=""  /></td></tr>
+</table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="200" class="menu">
+	<div id="todolist">
+			<p><a href="../todolist.html">Todo List</a></p>
+	</div>
+      <b>Packages:</b><br />
+              <a href="../li_other.html">other</a><br />
+              <a href="../li_Controller.html">Controller</a><br />
+              <a href="../li_Conversion.html">Conversion</a><br />
+              <a href="../li_Form.html">Form</a><br />
+              <a href="../li_Function.html">Function</a><br />
+              <a href="../li_Kernel.html">Kernel</a><br />
+              <a href="../li_Model.html">Model</a><br />
+              <a href="../li_Views.html">Views</a><br />
+            <br /><br />
+                        <b>Files:</b><br />
+      	  <div class="package">
+			<a href="../Function/_Function---Curl.php.html">		Curl.php
+		</a><br>
+			<a href="../Function/_Function---FileIni.php.html">		FileIni.php
+		</a><br>
+			<a href="../Function/_Function---Files.php.html">		Files.php
+		</a><br>
+			<a href="../Function/_Function---Ftp.php.html">		Ftp.php
+		</a><br>
+	  </div><br />
+      
+      
+            <b>Classes:</b><br />
+        <div class="package">
+		    		<a href="../Function/Abs_Function_Curl.html">Abs_Function_Curl</a><br />
+	    		<a href="../Function/Abs_Function_Files.html">Abs_Function_Files</a><br />
+	    		<a href="../Function/Abs_Function_Ftp.html">Abs_Function_Ftp</a><br />
+	    		<a href="../Function/Aps_Function_FileIni.html">Aps_Function_FileIni</a><br />
+	  </div>
+                </td>
+    <td>
+      <table cellpadding="10" cellspacing="0" width="100%" border="0"><tr><td valign="top">
+
+<h1>Class: Abs_Function_Curl</h1>
+Source Location: /Function/Curl.php<br /><br />
+
+
+<table width="100%" border="0">
+<tr><td valign="top">
+
+<h3><a href="#class_details">Class Overview</a></h3>
+<pre></pre><br />
+<div class="description">Object-oriented implementation of the Curl extension</div><br /><br />
+<h4>Author(s):</h4>
+<ul>
+          <li>David Costa &lt;<a href="mailto:gurugeek@php.net">gurugeek@php.net</a>&gt;</li>
+              <li>Philippe Jausions &lt;<a href="mailto:jausions@php.net">jausions@php.net</a>&gt;</li>
+              <li>Sterling Hughes &lt;<a href="mailto:sterling@php.net">sterling@php.net</a>&gt;</li>
+              <li>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</li>
+                  </ul>
+
+
+
+
+                        
+
+        
+</td>
+
+<td valign="top">
+<h3><a href="#class_vars">Variables</a></h3>
+<ul>
+    <li><a href="../Function/Abs_Function_Curl.html#var$caInfo">$caInfo</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$caPath">$caPath</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$cookies">$cookies</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$fields">$fields</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$file">$file</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$fileSize">$fileSize</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$file_size">$file_size</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$followLocation">$followLocation</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$follow_location">$follow_location</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$header">$header</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$httpHeaders">$httpHeaders</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$http_headers">$http_headers</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$mute">$mute</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$password">$password</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$progress">$progress</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$proxy">$proxy</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$proxyPassword">$proxyPassword</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$proxyUser">$proxyUser</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$returnTransfer">$returnTransfer</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$return_transfer">$return_transfer</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$sslCert">$sslCert</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$sslCertPasswd">$sslCertPasswd</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$sslVersion">$sslVersion</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$timeout">$timeout</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$type">$type</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$url">$url</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$userAgent">$userAgent</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$username">$username</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$verbose">$verbose</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$verifyHost">$verifyHost</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#var$verifyPeer">$verifyPeer</a></li>
+  </ul>
+</td>
+
+
+<td valign="top">
+<h3><a href="#class_methods">Methods</a></h3>
+<ul>
+    <li><a href="../Function/Abs_Function_Curl.html#method__construct">__construct</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#method__destruct">__destruct</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodclose">close</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodcreate">create</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodexecute">execute</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodgetInfo">getInfo</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodNet_Curl">Net_Curl</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodsetOption">setOption</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodverboseAll">verboseAll</a></li>
+    <li><a href="../Function/Abs_Function_Curl.html#methodverbose_all">verbose_all</a></li>
+  </ul>
+</td>
+
+</tr></table>
+<hr />
+
+<table width="100%" border="0"><tr>
+
+
+
+
+
+
+</tr></table>
+<hr />
+
+<a name="class_details"></a>
+<h3>Class Details</h3>
+<div class="tags">
+[line 58]<br />
+Object-oriented implementation of the Curl extension<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>David Costa &lt;<a href="mailto:gurugeek@php.net">gurugeek@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Philippe Jausions &lt;<a href="mailto:jausions@php.net">jausions@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Sterling Hughes &lt;<a href="mailto:sterling@php.net">sterling@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>link:</b>&nbsp;&nbsp;</td><td><a href="http://pear.php.net/package/Net_Curl">http://pear.php.net/package/Net_Curl</a></td>
+  </tr>
+  <tr>
+    <td><b>license:</b>&nbsp;&nbsp;</td><td><a href="http://www.opensource.org/licenses/bsd-license.php">New BSD License</a></td>
+  </tr>
+</table>
+</div>
+</div><br /><br />
+<div class="top">[ <a href="#top">Top</a> ]</div><br />
+
+<hr />
+<a name="class_vars"></a>
+<h3>Class Variables</h3>
+<div class="tags">
+	<a name="var$caInfo"></a>
+	<p></p>
+	<h4>$caInfo = <span class="value">&nbsp;''</span></h4>
+	<p>[line 328]</p>
+  $caInfo<br /><br /><p>Set value for CURLOPT_CAINFO. The name of a file holding one or more  certificates to verify the peer with. This only makes sense when used  in combination with CURLOPT_SSL_VERIFYPEER. curl-ca-bundle.crt is  avaible on the Curl website http://curl.haxx.se/ for download inside  the packages.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$caPath"></a>
+	<p></p>
+	<h4>$caPath = <span class="value"></span></h4>
+	<p>[line 339]</p>
+  $caPath<br /><br /><p>Set value for CURLOPT_CAPATH. A directory that holds multiple CA  certificates. Use this option alongside CURLOPT_SSL_VERIFYPEER.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$cookies"></a>
+	<p></p>
+	<h4>$cookies = <span class="value">array()</span></h4>
+	<p>[line 237]</p>
+  The cookies to send to the remote site<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$fields"></a>
+	<p></p>
+	<h4>$fields = <span class="value"></span></h4>
+	<p>[line 262]</p>
+  The fields to send in a 'POST' request<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$file"></a>
+	<p></p>
+	<h4>$file = <span class="value"></span></h4>
+	<p>[line 209]</p>
+  The file to upload (PUT, or FTP methods)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$fileSize"></a>
+	<p></p>
+	<h4>$fileSize = <span class="value"></span></h4>
+	<p>[line 218]</p>
+  The file size of the file pointed to by the $file  property<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$file_size"></a>
+	<p></p>
+	<h4>$file_size = <span class="value">&nbsp;false</span></h4>
+	<p>[line 228]</p>
+  The file size of the file pointed to by the $file  property<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$followLocation"></a>
+	<p></p>
+	<h4>$followLocation = <span class="value">&nbsp;true</span></h4>
+	<p>[line 157]</p>
+  Whether or not to follow HTTP Location headers.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$follow_location"></a>
+	<p></p>
+	<h4>$follow_location = <span class="value">&nbsp;false</span></h4>
+	<p>[line 166]</p>
+  Whether or not to follow HTTP Location headers.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$header"></a>
+	<p></p>
+	<h4>$header = <span class="value">&nbsp;false</span></h4>
+	<p>[line 124]</p>
+  Whether or not to include the header in the results  of the CURL transfer<br /><br />
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$httpHeaders"></a>
+	<p></p>
+	<h4>$httpHeaders = <span class="value">&nbsp;null</span></h4>
+	<p>[line 245]</p>
+  Additional HTTP headers to send to the remote site<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$http_headers"></a>
+	<p></p>
+	<h4>$http_headers = <span class="value">&nbsp;false</span></h4>
+	<p>[line 254]</p>
+  Additional HTTP headers to send to the remote site<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>array</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$mute"></a>
+	<p></p>
+	<h4>$mute = <span class="value">&nbsp;false</span></h4>
+	<p>[line 149]</p>
+  Whether or not to suppress error messages<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$password"></a>
+	<p></p>
+	<h4>$password = <span class="value">&nbsp;''</span></h4>
+	<p>[line 83]</p>
+  The Password for standard HTTP Authentication<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$progress"></a>
+	<p></p>
+	<h4>$progress = <span class="value">&nbsp;false</span></h4>
+	<p>[line 141]</p>
+  Whether or not to display a progress meter for the current transfer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$proxy"></a>
+	<p></p>
+	<h4>$proxy = <span class="value"></span></h4>
+	<p>[line 270]</p>
+  The proxy server to go through<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$proxyPassword"></a>
+	<p></p>
+	<h4>$proxyPassword = <span class="value"></span></h4>
+	<p>[line 286]</p>
+  The password for the Proxy server<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$proxyUser"></a>
+	<p></p>
+	<h4>$proxyUser = <span class="value"></span></h4>
+	<p>[line 278]</p>
+  The username for the Proxy server<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$returnTransfer"></a>
+	<p></p>
+	<h4>$returnTransfer = <span class="value">&nbsp;true</span></h4>
+	<p>[line 183]</p>
+  Whether or not to return the results of the  current transfer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$return_transfer"></a>
+	<p></p>
+	<h4>$return_transfer = <span class="value">&nbsp;false</span></h4>
+	<p>[line 193]</p>
+  Whether or not to return the results of the  current transfer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$sslCert"></a>
+	<p></p>
+	<h4>$sslCert = <span class="value"></span></h4>
+	<p>[line 99]</p>
+  The filename of the SSL certificate<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$sslCertPasswd"></a>
+	<p></p>
+	<h4>$sslCertPasswd = <span class="value"></span></h4>
+	<p>[line 108]</p>
+  The password corresponding to the certificate  in the $sslCert property<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$sslVersion"></a>
+	<p></p>
+	<h4>$sslVersion = <span class="value"></span></h4>
+	<p>[line 91]</p>
+  The SSL version for the transfer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>integer</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$timeout"></a>
+	<p></p>
+	<h4>$timeout = <span class="value">&nbsp;0</span></h4>
+	<p>[line 174]</p>
+  Time allowed for current transfer, in seconds.  0 means no limit<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>int</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$type"></a>
+	<p></p>
+	<h4>$type = <span class="value"></span></h4>
+	<p>[line 201]</p>
+  The type of transfer to perform (ie. 'POST', 'GET', 'PUT', etc)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$url"></a>
+	<p></p>
+	<h4>$url = <span class="value"></span></h4>
+	<p>[line 67]</p>
+  The URL for cURL to work with<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$userAgent"></a>
+	<p></p>
+	<h4>$userAgent = <span class="value"></span></h4>
+	<p>[line 116]</p>
+  User Agent string when making an HTTP request<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$username"></a>
+	<p></p>
+	<h4>$username = <span class="value">&nbsp;''</span></h4>
+	<p>[line 75]</p>
+  The Username for standard HTTP Authentication<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>string</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$verbose"></a>
+	<p></p>
+	<h4>$verbose = <span class="value">&nbsp;false</span></h4>
+	<p>[line 133]</p>
+  Whether or not to output debug information while executing a  curl transfer<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$verifyHost"></a>
+	<p></p>
+	<h4>$verifyHost = <span class="value">&nbsp;2</span></h4>
+	<p>[line 314]</p>
+  $verifyHost<br /><br /><p><ol><li>: to stop CURL from verifying the host's certificate.</li><li>: to check the existence of a common name in the SSL peer certificate.</li><li>: to check the existence of a common name  and also verify that it
+     matches the hostname provided.</li></ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>bool</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+	<a name="var$verifyPeer"></a>
+	<p></p>
+	<h4>$verifyPeer = <span class="value">&nbsp;true</span></h4>
+	<p>[line 301]</p>
+  $verifyPeer<br /><br /><p>FALSE to stop CURL from verifying the peer's certificate.  Alternate certificates to verify against can be specified  with the CURLOPT_CAINFO option or a certificate directory  can be specified with the CURLOPT_CAPATH option.  CURLOPT_SSL_VERIFYHOST may also need to be TRUE or FALSE  if CURLOPT_SSL_VERIFYPEER is disabled (it defaults to 2).</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+
+  <br />
+	<div class="tags">
+  <table border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td><b>Type:</b>&nbsp;&nbsp;</td>
+      <td>boolean</td>
+    </tr>
+      </table>
+	</div><br /><br />
+	<div class="top">[ <a href="#top">Top</a> ]</div><br />
+</div><br />
+
+<hr />
+<a name="class_methods"></a>
+<h3>Class Methods</h3>
+<div class="tags">
+
+  <hr />
+	<a name="method__construct"></a>
+	<h3>constructor __construct <span class="smalllinenumber">[line 378]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __construct(
+[string
+$url = ''], [string
+$userAgent = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		The Net_Curl PHP 5.x constructor, called when a new Net_Curl object  is initialized (also called via 4.x constructor)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>The URL to fetch (can be set using the $url                           property as well)</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$userAgent</b>&nbsp;&nbsp;</td>
+        <td>The userAgent string (can be set using the                           $userAgent property as well)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="method__destruct"></a>
+	<h3>destructor __destruct <span class="smalllinenumber">[line 859]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void __destruct(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		PHP 5.x destructor.<br /><br /><p>Runs Net_Curl::close() to make sure we close our cURL connection.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>see:</b>&nbsp;&nbsp;</td><td>Net_Curl::close()</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodclose"></a>
+	<h3>method close <span class="smalllinenumber">[line 794]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void close(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Closes the curl transfer and finishes the object (kinda ;)<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Sterling Hughes &lt;<a href="mailto:sterling@php.net">sterling@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>since:</b>&nbsp;&nbsp;</td><td>PHP 4.0.5</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodcreate"></a>
+	<h3>method create <span class="smalllinenumber">[line 731]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean create(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Creates a cURL resource. If curl_init() doesn't exist or we could not  create a resource it will error out.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>TRUE on success, PEAR_Error on failure</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodexecute"></a>
+	<h3>method execute <span class="smalllinenumber">[line 438]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>PEAR_Error execute(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Executes a prepared CURL transfer<br /><br /><p>Run this function to execute your cURL request. If all goes well you  should get a string (the output from the remote host regarding your  request) or true (if you choose to output directly to the browser). If  something fails then PEAR_Error is returned.</p><p><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-inc">require_once&nbsp;</span><span class="src-str">'Net/Curl.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$curl&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../Function/Abs_Function_Curl.html#methodNet_Curl">Net_Curl</a><span class="src-sym">(</span><span class="src-str">'http://www.example.com'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$curl</span><span class="src-sym">-&gt;</span><span class="src-id"><a href="../Function/Abs_Function_Curl.html#var$fields">fields</a>&nbsp;</span>=&nbsp;<span class="src-key">array</span><span class="src-sym">(</span><span class="src-str">'foo'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'1'</span><span class="src-sym">,&nbsp;</span><span class="src-str">'bar'&nbsp;</span>=&gt;&nbsp;<span class="src-str">'apple'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$result&nbsp;</span>=&nbsp;<span class="src-var">$curl</span><span class="src-sym">-&gt;</span><a href="../Function/Abs_Function_Curl.html#methodexecute">execute</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-id">PEAR</span><span class="src-sym">::</span><span class="src-id">isError</span><span class="src-sym">(</span><span class="src-var">$result</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$result</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>on failure, true/result on success</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Sterling Hughes &lt;<a href="mailto:sterling@php.net">sterling@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>since:</b>&nbsp;&nbsp;</td><td>PHP 4.0.5</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodgetInfo"></a>
+	<h3>method getInfo <span class="smalllinenumber">[line 713]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>mixed getInfo(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Returns the info from the cURL session. PEAR_Error if you try and run  this before you execute the session.<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>return:</b>&nbsp;&nbsp;</td><td>PEAR_Error if there is no resource, info on success</td>
+  </tr>
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodNet_Curl"></a>
+	<h3>method Net_Curl <span class="smalllinenumber">[line 404]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void Net_Curl(
+[string
+$url = ''], [string
+$userAgent = ''])</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Net_Curl<br /><br /><p>PHP 4.x constructor.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$url</b>&nbsp;&nbsp;</td>
+        <td>The URL to fetch (can be set using the $url                           property as well)</td>
+      </tr>
+          <tr>
+        <td class="type">string&nbsp;&nbsp;</td>
+        <td><b>$userAgent</b>&nbsp;&nbsp;</td>
+        <td>The userAgent string (can be set using the                           $userAgent property as well)</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodsetOption"></a>
+	<h3>method setOption <span class="smalllinenumber">[line 694]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>boolean setOption(
+int
+$option, mixed
+$value)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets an option for your cURL session. Please note that the cURL handler  is NOT created before execute(). This is for error checking purposes.<br /><br /><p>You should use setOption() in the following manner:</p><p><ol><li><div class="src-line">&nbsp;<span class="src-php">&lt;?php</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-inc">require_once&nbsp;</span><span class="src-str">'Net/Curl.php'</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$curl&nbsp;</span>=&nbsp;<span class="src-key">new&nbsp;</span><a href="../Function/Abs_Function_Curl.html#methodNet_Curl">Net_Curl</a><span class="src-sym">(</span><span class="src-str">'http://www.example.com'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-var">$check&nbsp;</span>=&nbsp;<span class="src-var">$curl</span><span class="src-sym">-&gt;</span><a href="../Function/Abs_Function_Curl.html#methodcreate">create</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-id">PEAR</span><span class="src-sym">::</span><span class="src-id">isError</span><span class="src-sym">(</span><span class="src-var">$check</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$curl</span><span class="src-sym">-&gt;</span><a href="../Function/Abs_Function_Curl.html#methodsetOption">setOption</a><span class="src-sym">(</span><span class="src-id">CURLOPT_FOO</span><span class="src-sym">,&nbsp;</span><span class="src-str">'bar'</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-var">$result&nbsp;</span>=&nbsp;<span class="src-var">$curl</span><span class="src-sym">-&gt;</span><a href="../Function/Abs_Function_Curl.html#methodexecute">execute</a><span class="src-sym">(</span><span class="src-sym">)</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-key">if&nbsp;</span><span class="src-sym">(</span><span class="src-sym">!</span><span class="src-id">PEAR</span><span class="src-sym">::</span><span class="src-id">isError</span><span class="src-sym">(</span><span class="src-var">$result</span><span class="src-sym">))&nbsp;</span><span class="src-sym">{</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo&nbsp;<span class="src-var">$result</span><span class="src-sym">;</span></div></li>
+<li><div class="src-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;<span class="src-sym">}</span></div></li>
+<li><div class="src-line">&nbsp;</div></li>
+<li><div class="src-line">&nbsp;<span class="src-php">?&gt;</span></div></li>
+</ol></p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>Joe Stump &lt;<a href="mailto:joe@joestump.net">joe@joestump.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <h4>Parameters:</h4>
+    <div class="tags">
+    <table border="0" cellspacing="0" cellpadding="0">
+          <tr>
+        <td class="type">int&nbsp;&nbsp;</td>
+        <td><b>$option</b>&nbsp;&nbsp;</td>
+        <td>cURL constant (ie. CURLOPT_URL)</td>
+      </tr>
+          <tr>
+        <td class="type">mixed&nbsp;&nbsp;</td>
+        <td><b>$value</b>&nbsp;&nbsp;</td>
+        <td>The option's value</td>
+      </tr>
+        </table>
+    </div><br />
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodverboseAll"></a>
+	<h3>method verboseAll <span class="smalllinenumber">[line 760]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void verboseAll(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets verbose output<br /><br /><p>Turns on super debugging mode by not suppressing errors, turning on  verbose mode, showing headers and displaying progress.</p><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>David Costa &lt;<a href="mailto:gurugeek@php.net">gurugeek@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+  <hr />
+	<a name="methodverbose_all"></a>
+	<h3>method verbose_all <span class="smalllinenumber">[line 778]</span></h3>
+	<div class="function">
+    <table width="90%" border="0" cellspacing="0" cellpadding="1"><tr><td class="code_border">
+    <table width="100%" border="0" cellspacing="0" cellpadding="2"><tr><td class="code">
+		<code>void verbose_all(
+)</code>
+    </td></tr></table>
+    </td></tr></table><br />
+	
+		Sets verbose output<br /><br /><br /><br />
+<h4>Tags:</h4>
+<div class="tags">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><b>author:</b>&nbsp;&nbsp;</td><td>David Costa &lt;<a href="mailto:gurugeek@php.net">gurugeek@php.net</a>&gt;</td>
+  </tr>
+  <tr>
+    <td><b>deprecated:</b>&nbsp;&nbsp;</td><td></td>
+  </tr>
+  <tr>
+    <td><b>access:</b>&nbsp;&nbsp;</td><td>public</td>
+  </tr>
+</table>
+</div>
+<br /><br />
+
+	
+        <div class="top">[ <a href="#top">Top</a> ]</div>
+  </div>
+</div><br />
+
+
+        <div class="credit">
+		    <hr />
+		    Documentation generated on Sun, 09 Nov 2008 21:10:24 +0800 by <a href="http://www.phpdoc.org">phpDocumentor 1.4.1</a>
+	      </div>
+      </td></tr></table>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

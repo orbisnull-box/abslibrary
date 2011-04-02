@@ -1,0 +1,36 @@
+<?php
+$form=$this->element;
+$subforms=$form->getSubforms();
+$elements=$form->getElements();
+?>
+<form action="<?= $this->escape($form->getAction()) ?>"
+	method="<?= $this->escape($form->getMethod()) ?>">
+
+<table>
+<?php
+$i=0;
+foreach($subforms as $subform)
+{
+    if ($subform->count()>0){
+        $i++;
+        if ($i%2!==0) echo "<tr>\n";
+        echo "<td valign=top>	\n".$subform."	\n</td>\n";
+        if ($i%2===0) echo "</tr>\n";
+    }
+}
+
+$i=0;
+foreach($elements as $name=>$element)
+{
+    $is_hidden=(get_class($element)=='Zend_Form_Element_Hidden');
+    if ($name!=='submit'){
+        $i++;
+        if ($i%2!==0 and !$is_hidden) echo "<tr>\n";
+        echo "<td valign=top>	\n".$element."	\n</td>\n";
+        if ($i%2===0 and !$is_hidden) echo "</tr>\n";
+        if ($is_hidden) $i--;
+    }
+}
+?>
+</table>
+<?= $form->submit ?></form>

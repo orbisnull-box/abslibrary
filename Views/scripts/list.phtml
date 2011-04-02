@@ -1,0 +1,47 @@
+<table id="listAction" class="tablesorter" border="0" cellpadding="0"
+	cellspacing="0" width="100%">
+	<thead>
+		<tr>
+		<?php
+		//var_dump($this->cols);
+		/*foreach ($this->cols as $col)
+		{
+		if (!$col['PRIMARY'] and in_array($col['COLUMN_NAME'], $this->allowCols)) {
+		echo "<th>".t($col['TABLE_NAME'].'.'.$col['COLUMN_NAME'])."</th>\n";
+		}
+		}*/
+		foreach ($this->allowCols as $col_name)
+		{
+		    echo "<th>".t($this->cols[$col_name]['TABLE_NAME'].'.'.$col_name)."</th>\n";
+		}
+		echo "<td width=50 colspan=3 align=center>Действие</td>\n";
+		?>
+		</tr>
+	</thead>
+	<tbody>
+	<?php
+	foreach ($this->list as $item)
+	{
+	    echo "<tr>\n";
+	    /*foreach ($item as $name=>$col)
+	     {
+	     if ($name!=='id' and in_array($name, $this->allowCols))
+	     {
+	     echo "<td>".$this->tT($name, $col)."</td>\n";
+	     }
+	     }*/
+	    foreach ($this->allowCols as $col_name)
+	    {
+	        echo "<td>".$this->tT($col_name, $item[$col_name])."</td>\n";
+	    }
+
+	    echo '<td width="15">'.$this->itemAction('show', $item[$this->essense_id_name]).'</td>';
+	    echo '<td width="15">'.$this->itemAction('edit', $item[$this->essense_id_name]).'</td>';
+	    echo '<td width="15">'.$this->itemAction('delete', $item[$this->essense_id_name]).'</td>';
+	    echo "</tr>\n";
+	}
+	?>
+	</tbody>
+</table>
+	<?=$this->pager($this->pagerParams); ?>
+

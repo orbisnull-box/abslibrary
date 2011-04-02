@@ -1,0 +1,7 @@
+<ul>
+<?php foreach($this->menu_main->toArray() AS $key => $val)
+    {
+        echo '<li>'. $this->link($key, $val). '</li>';
+    };
+?>
+</ul>
