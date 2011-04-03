@@ -237,6 +237,13 @@ class ABS_Kernel
         return $debug;
     }
 
+    public static function varDie($var) {
+        if (ABS_Kernel::isDebug()) {
+            var_dump($var);
+            die();
+        }
+    }
+
     /**
      * Инициализация и предварительная настройка ACL
      *
